@@ -1,0 +1,84 @@
+version: 2
+
+updates:
+  - package-ecosystem: npm
+    directory: "/"
+    schedule:
+      interval: weekly
+      day: friday
+      time: "09:00"
+      timezone: America/New_York
+    open-pull-requests-limit: 20
+    rebase-strategy: auto
+    versioning-strategy: increase-if-necessary
+
+    groups:
+      monorepo:
+        patterns:
+          - "turbo"
+          - "lefthook"
+          - "is-ci"
+        update-types: ["patch", "minor"]
+
+      linting-formatting:
+        patterns:
+          - "@biomejs/biome"
+        update-types: ["patch", "minor"]
+
+      type-checking:
+        patterns:
+          - "typescript"
+          - "@types/*"
+          - "tsx"
+        update-types: ["patch", "minor"]
+
+      css:
+        patterns:
+          - "tailwindcss"
+          - "tailwind-merge"
+          - "tailwind-variants"
+          - "@tailwindcss/*"
+          - "postcss*"
+          - "autoprefixer"
+        update-types: ["patch", "minor"]
+
+      vite:
+        patterns:
+          - "vite"
+          - "@vitejs/*"
+          - "vite-*"
+          - "rollup*"
+        update-types: ["patch", "minor"]
+
+      unit:
+        patterns:
+          - "vitest"
+          - "@vitest/*"
+          - "@testing-library/*"
+          - "jsdom"
+          - "msw"
+          - "bundlesize*"
+        update-types: ["patch", "minor"]
+
+      react:
+        patterns:
+          - "react*"
+          - "react-router*"
+          - "@react-router/*"
+          - "@types/react*"
+        update-types: ["patch", "minor"]
+
+      dates:
+        patterns:
+          - "date-fns"
+          - "date-fns-tz"
+        update-types: ["patch", "minor"]
+
+      utils:
+        patterns:
+          - "ky"
+          - "js-cookie"
+          - "@types/js-cookie"
+          - "uuid"
+          - "isbot"
+        update-types: ["patch", "minor"]

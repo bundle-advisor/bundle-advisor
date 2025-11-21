@@ -1,0 +1,108 @@
+{
+  "$schema": "https://turborepo.com/schema.json",
+  "ui": "tui",
+  "globalEnv": [
+    "CI",
+    "DEV",
+    "GITHUB_*",
+    "MODE",
+    "NODE_ENV",
+    "NPM_RC",
+    "VERCEL_*",
+    "VITE_*"
+  ],
+  "tasks": {
+    // --------------- Build ---------------
+    "build": {
+      "dependsOn": ["gen:types", "^build"],
+      "inputs": ["$TURBO_DEFAULT$", ".env*"],
+      "outputs": [".build/**", "build/**", "dist/**", "storybook-static/**"]
+    },
+
+    // --------------- Check ---------------
+    // Note: the "//#" prefix above indicates a [root task](https://turborepo.com/docs/crafting-your-repository/configuring-tasks#registering-root-tasks)
+    // Formatting and linting tasks use Biome, which is recommended to be called from the workspace root.
+    // These tasks are not recommended to be cached because biome is fast and they are global. Learn more:
+    // https://turborepo.com/docs/guides/tools/biome
+    "//#check:format": {
+      "cache": false
+    },
+    "//#check:format:fix": {
+      "cache": false
+    },
+    "//#check:format:staged": {
+      // These `format:staged` tasks should never be cached
+      // because staged files are not an input to turbo's cache key
+      "cache": false
+    },
+    "//#check:lint": {
+      "cache": false
+    },
+    "//#check:lint:fix": {
+      "cache": false
+    },
+    "//#check:lint:staged": {
+      "cache": false
+    },
+    "check:types": {
+      "dependsOn": ["transit"]
+    },
+
+    // --------------- Run ---------------
+    "dev": {
+      // Vite will build during dev mode, so we only need to build dependencies.
+      // We don't need to run the build task within the current package.
+      "dependsOn": ["^build"],
+      "cache": false,
+      "persistent": true
+    },
+    "preview": {
+      // Vite will NOT build during preview mode, so we need to build the current package
+      // AND its dependencies before running the preview server.
+      "dependsOn": ["build"],
+      "cache": false,
+      "persistent": true
+    },
+    "start": {
+      // Vite will NOT build during preview mode, so we need to build the current package
+      // AND its dependencies before running the preview server.
+      "dependsOn": ["build"],
+      "cache": false,
+      "persistent": true
+    },
+
+    // --------------- Test ---------------
+    "test:unit": {
+      // Vite will build the current package whenr unning unit tests, so we only need to build dependencies.
+      // We don't need to run the build task within the current package.
+      "dependsOn": ["^build"]
+    },
+    "test:unit:coverage": {
+      // Vite will build the current package whenr unning unit tests, so we only need to build dependencies.
+      // We don't need to run the build task within the current package.
+      "dependsOn": ["^build"],
+      "outputs": [".reports/**"]
+    },
+    "test:unit:watch": {
+      // Vite will build the current package when running unit tests, so we only need to build dependencies.
+      // We don't need to run the build task within the current package.
+      "dependsOn": ["^build"],
+      "persistent": true,
+      "cache": false,
+      "interactive": true
+    },
+
+    // --------------- Transit ---------------
+    // This transit task establishes a "transit" node to create a relationship between package dependencies.
+    // The name "transit" is intentionally chosen because it doesn't match a script in any package.json files.
+    // This allows us to create a dependency graph that can be used to run tasks in parallel where possible.
+    // This is useful for tasks that don't have any inputs or outputs, such as linting or type checking,
+    // but still need to be run after the build step in each package.
+    // Read more here:
+    // - https://turbo.build/docs/crafting-your-repository/configuring-tasks#dependent-tasks-that-can-be-run-in-parallel
+    // - https://turbo.build/docs/core-concepts/package-and-task-graph#transit-nodes
+    "transit": {
+      "dependsOn": ["^transit"]
+    }
+  }
+}

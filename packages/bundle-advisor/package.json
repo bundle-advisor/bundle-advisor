@@ -1,0 +1,27 @@
+{
+  "name": "bundle-advisor",
+  "version": "0.1.0",
+  "type": "module",
+  "bin": {
+    "bundle-advisor": "./dist/cli/index.js"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.24",
+    "typescript": "catalog:",
+    "vitest": "^2.1.8"
+  },
+  "dependencies": {
+    "commander": "^12.1.0"
+  }
+}

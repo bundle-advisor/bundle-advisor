@@ -1,0 +1,14 @@
+# EXAMPLE USAGE:
+#
+#   Refer for explanation to following link:
+#   https://lefthook.dev/configuration/
+#
+pre-commit:
+  parallel: true
+  jobs:
+    - run: pnpm exec turbo run check:lint:staged -- --no-errors-on-unmatched
+      stage_fixed: true
+    - run: pnpm exec turbo run check:format:staged -- --no-errors-on-unmatched
+      stage_fixed: true
+
+

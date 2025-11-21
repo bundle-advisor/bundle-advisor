@@ -1,0 +1,27 @@
+{
+  "name": "one-development",
+  "packageManager": "pnpm@10.12.1",
+  "private": true,
+  "scripts": {
+    "build": "turbo build",
+    "check:format:fix": "biome format --fix",
+    "check:format:staged": "biome format --staged",
+    "check:format": "biome format",
+    "check:lint:fix": "biome lint --fix",
+    "check:lint:staged": "biome lint --staged",
+    "check:lint": "biome lint",
+    "check:types": "turbo run check:types",
+    "check": "turbo run check:format check:lint check:types",
+    "dev": "turbo dev",
+    "list": "turbo ls",
+    "prepare": "is-ci || lefthook install",
+    "test": "turbo test:unit"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.3.0",
+    "is-ci": "^4.1.0",
+    "lefthook": "^1.13.6",
+    "turbo": "^2.5.8",
+    "typescript": "catalog:"
+  }
+}

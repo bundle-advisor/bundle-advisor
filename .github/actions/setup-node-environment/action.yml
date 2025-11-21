@@ -1,0 +1,16 @@
+name: Setup Node Environment
+description: Setup the Node environment for other jobs
+runs:
+  using: 'composite'
+  steps:
+    - uses: pnpm/action-setup@v4
+      with:
+        run_install: false
+    - name: Use Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version-file: '.nvmrc'
+        cache: 'pnpm'
+    - name: PNPM install
+      shell: bash
+      run: pnpm install --frozen-lockfile
