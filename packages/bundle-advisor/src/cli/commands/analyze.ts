@@ -5,7 +5,7 @@ import { RollupPluginBundleStatsAdapter } from '../../adapters/rollup-plugin-bun
 import { WebpackStatsAdapter } from '../../adapters/webpack-stats.js'
 import { Analyzer } from '../../analyzer/analyzer.js'
 import { loadConfig, mergeConfig } from '../../config.js'
-import { generateJsonReport, generateMarkdownReport } from '../../reports/generators.js'
+import { generateJsonReport, generateMarkdownReport } from '../../reporters/index.js'
 import {
   createDuplicatePackagesRule,
   createHugeModulesRule,

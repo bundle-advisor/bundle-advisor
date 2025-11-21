@@ -1,6 +1,6 @@
 export * from './adapters/index.js'
 export * from './analyzer/index.js'
 export * from './config.js'
-export * from './reports/index.js'
+export * from './reporters/index.js'
 export * from './rules/index.js'
 export * from './types.js'

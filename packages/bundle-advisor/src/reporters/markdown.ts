@@ -2,13 +2,6 @@ import { formatBytes } from '../rules/engine.js'
 import type { AIEnhancedReport, RawReport } from '../types.js'
 
 /**
- * Generate a JSON report
- */
-export function generateJsonReport(report: RawReport | AIEnhancedReport): string {
-  return JSON.stringify(report, null, 2)
-}
-
-/**
  * Generate a Markdown report
  */
 export function generateMarkdownReport(report: RawReport | AIEnhancedReport): string {

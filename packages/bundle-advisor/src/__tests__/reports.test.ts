@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { generateJsonReport, generateMarkdownReport } from '../reports/generators.js'
+import { generateJsonReport, generateMarkdownReport } from '../reporters/index.js'
 import type { RawReport } from '../types.js'
 
 describe('Report Generators', () => {
