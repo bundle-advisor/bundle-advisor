@@ -27,22 +27,17 @@ bundle-advisor analyze --stats-file path/to/stats.json
 **Set the output format**
 
 ```bash
+# Markdown (default)
+bundle-advisor analyze --stats-file path/to/stats.json
+
 # JSON
 bundle-advisor analyze --stats-file path/to/stats.json --reporter json
-
-# Markdown
-bundle-advisor analyze --stats-file path/to/stats.json
 ```
 
 **Write to a directory**
 
 ```bash
-
-# Markdown
-bundle-advisor analyze --stats-file path/to/stats.json --reporter markdown --output-dir report.md
-
-# JSON
-bundle-advisor analyze --stats-file path/to/stats.json --reporter json --output-dir report.json
+bundle-advisor analyze --stats-file path/to/stats.json --output-dir reports
 ```
 
 The CLI will auto-detect the format (Webpack or bundle-stats).
