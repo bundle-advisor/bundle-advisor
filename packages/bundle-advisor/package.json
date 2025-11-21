@@ -1,6 +1,6 @@
 {
   "name": "bundle-advisor",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "module",
   "bin": {
     "bundle-advisor": "./dist/cli/index.js"
