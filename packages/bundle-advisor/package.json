@@ -9,6 +9,7 @@
     "url": "git+https://github.com/jth0024/bundle-advisor.git",
     "directory": "packages/bundle-advisor"
   },
+  "homepage": "https://github.com/jth0024/bundle-advisor/tree/master/packages/bundle-advisor",
   "keywords": [
     "analyzer",
     "bundle",
