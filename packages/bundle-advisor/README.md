@@ -22,9 +22,33 @@ pnpm add -D bundle-advisor
 bundle-advisor analyze --stats path/to/stats.json
 ```
 
+### Set the output format
+
+```bash
+# JSON
+bundle-advisor analyze --stats path/to/stats.json --format json
+
+# Markdown
+bundle-advisor analyze --stats path/to/stats.json
+```
+
+### Write to a file
+
+```bash
+
+# Markdown
+bundle-advisor analyze --stats path/to/stats.json --format markdown --output report.md
+
+# JSON
+bundle-advisor analyze --stats path/to/stats.json --format json --output report.json
+```
+
+The CLI will auto-detect the format (Webpack or bundle-stats).
+
+
 ### Configuration File
 
-You can create a `bundle-advisor.config.json` file in your project root to configure default settings. 
+Optionally, you can create a `bundle-advisor.config.json` file in your project root to configure default settings. 
 
 ```json
 {
@@ -49,34 +73,4 @@ You can create a `bundle-advisor.config.json` file in your project root to confi
   - `maxModuleSize`: Maximum module size in bytes (default: 200KB)
   - `minLazyLoadThreshold`: Minimum size for lazy load candidates in bytes (default: 100KB)
 
-**Note:** CLI arguments take precedence over config file settings.
-
-### Set the output format
-
-```bash
-# JSON
-bundle-advisor analyze --stats path/to/stats.json --format json
-
-# Markdown
-bundle-advisor analyze --stats path/to/stats.json
-```
-
-### Write to a file
-
-```bash
-
-# Markdown
-bundle-advisor analyze --stats path/to/stats.json --format markdown --output report.md
-
-# JSON
-bundle-advisor analyze --stats path/to/stats.json --format json --output report.json
-```
-
-The CLI will auto-detect the format (Webpack or bundle-stats).
-
-### Disable AI (rules only)
-
-```bash
-bundle-advisor analyze --stats dist/stats.json --no-ai --format markdown
-```
-
+**Note:** All properties are optional and CLI arguments take precedence over config file settings.
