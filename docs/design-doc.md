@@ -369,8 +369,8 @@ The LLM client itself is abstracted so that different providers can be swapped (
 2. GitHub Action step:
     - Checks out repo.
     - Installs `bundle-advisor`.
-    - Runs: `bundle-advisor analyze --stats path/to/stats.json --format markdown --output bundle-report.md`.
-3. Action uses GitHub CLI / REST API to post the contents of `bundle-report.md` as a PR comment.
+    - Runs: `bundle-advisor analyze --stats-file path/to/stats.json --reporter markdown --output-dir bundle-advisor`.
+3. Action uses GitHub CLI / REST API to post the contents of `bundle-advisor/` as a PR comment.
 
 **Security:**
 
@@ -507,13 +507,13 @@ For a future SaaS backend:
 
 ```bash
 # Local analysis
-bundle-advisor analyze --stats dist/webpack-stats.json --format markdown --output bundle-report.md
+bundle-advisor analyze --stats-file dist/webpack-stats.json --reporter markdown --output-dir bundle-advisor
 
 # JSON output only
-bundle-advisor analyze --stats dist/stats.json --format json > bundle-report.json
+bundle-advisor analyze --stats-file dist/stats.json --reporter json > bundle-report.json
 
 # Disable AI (rules only)
-bundle-advisor analyze --stats dist/stats.json --no-ai --format markdown
+bundle-advisor analyze --stats-file dist/stats.json --no-ai --reporter markdown
 
 ```
 

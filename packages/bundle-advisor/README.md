@@ -17,44 +17,46 @@ pnpm add -D bundle-advisor
 
 ## Usage
 
+### CLI
+
 ```bash
 # Markdown output (default) - works with both Webpack and Vite/bundle-stats formats
-bundle-advisor analyze --stats path/to/stats.json
+bundle-advisor analyze --stats-file path/to/stats.json
 ```
 
-### Set the output format
+**Set the output format**
 
 ```bash
 # JSON
-bundle-advisor analyze --stats path/to/stats.json --format json
+bundle-advisor analyze --stats-file path/to/stats.json --reporter json
 
 # Markdown
-bundle-advisor analyze --stats path/to/stats.json
+bundle-advisor analyze --stats-file path/to/stats.json
 ```
 
-### Write to a file
+**Write to a directory**
 
 ```bash
 
 # Markdown
-bundle-advisor analyze --stats path/to/stats.json --format markdown --output report.md
+bundle-advisor analyze --stats-file path/to/stats.json --reporter markdown --output-dir report.md
 
 # JSON
-bundle-advisor analyze --stats path/to/stats.json --format json --output report.json
+bundle-advisor analyze --stats-file path/to/stats.json --reporter json --output-dir report.json
 ```
 
 The CLI will auto-detect the format (Webpack or bundle-stats).
 
 
-### Configuration File
+### Configuration
 
-Optionally, you can create a `bundle-advisor.config.json` file in your project root to configure default settings. 
+You can configure via the CLI arguments or create a `bundle-advisor.config.json` file in your project root.
 
 ```json
 {
   "reporter": "json",
-  "reportsDirectory": "path/to/file.md",
   "statsFile": "path/to/stats.json",
+  "outputDir": "path/to/file.md",
   "rules": {
     "maxChunkSize": 256000,
     "maxModuleSize": 256000,
@@ -63,14 +65,19 @@ Optionally, you can create a `bundle-advisor.config.json` file in your project r
 }
 ```
 
-**Configuration Options:**
+**Supported Options:**
 
-- `reporter`: Report format (`"json"` or `"markdown"`). Defaults to `"markdown"`.
-- `reportsDirectory`: Path to write reports. Will write to console if `undefined`. Defaults to `resolve(process.cwd(), "bundle-advisor-reports")`
-- `statsFile`: Path to the stats file. Defaults to `resolve(process.cwd(), "stats.json")`
-- `rules`: Rule-specific thresholds
-  - `maxChunkSize`: Maximum chunk size in bytes (default: 250KB)
-  - `maxModuleSize`: Maximum module size in bytes (default: 200KB)
-  - `minLazyLoadThreshold`: Minimum size for lazy load candidates in bytes (default: 100KB)
+| Option | Type | Default | Description |
+|--------|------|---------|-------------|
+| `reporter` | `"json" \| "markdown"` | `"markdown"`| The report output format |
+| `outputDir` | `string \| undefined` | `"bundle-advisor"`| The directory to write report files. Writes to console when explicitly set to `undefined`. |
+| `statsFile` | `string` | `stats.json`| The path to the bundle stats file. |
+| `rules.maxChunkSize` | `number` | `250 * 1024` | Maximum chunk size in bytes |
+| `rules.maxModuleSize` | `number` | `200 * 1024` | Maximum module size in bytes |
+| `rules.maxModuleSize` | `number` | `100 * 1024` | Minimum size for lazy load candidates in bytes |
 
-**Note:** All properties are optional and CLI arguments take precedence over config file settings.
+
+**Notes:** 
+* All configuration options are optional
+* CLI arguments take precedence over config file settings.
+* All directory and file paths must be relative to `process.cwd()`

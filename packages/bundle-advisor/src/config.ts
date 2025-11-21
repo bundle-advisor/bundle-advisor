@@ -6,7 +6,7 @@ import { resolve } from 'node:path'
  */
 export type BundleAdvisorConfig = {
   statsFile?: string
-  reportsDirectory?: string | null
+  outputDir?: string | null
   reporter?: 'json' | 'markdown'
   rules?: {
     maxChunkSize?: number
@@ -21,7 +21,7 @@ export type BundleAdvisorConfig = {
 export const DEFAULT_CONFIG: Required<BundleAdvisorConfig> = {
   statsFile: resolve(process.cwd(), 'stats.json'),
   reporter: 'markdown',
-  reportsDirectory: resolve(process.cwd(), 'bundle-advisor-reports'),
+  outputDir: resolve(process.cwd(), 'bundle-advisor'),
   rules: {
     maxChunkSize: 250 * 1024, // 250KB
     maxModuleSize: 200 * 1024, // 200KB
@@ -65,8 +65,7 @@ export function mergeConfig(
   return {
     statsFile: cliConfig.statsFile ?? fileConfig.statsFile ?? DEFAULT_CONFIG.statsFile,
     reporter: cliConfig.reporter ?? fileConfig.reporter ?? DEFAULT_CONFIG.reporter,
-    reportsDirectory:
-      cliConfig.reportsDirectory ?? fileConfig.reportsDirectory ?? DEFAULT_CONFIG.reportsDirectory,
+    outputDir: cliConfig.outputDir ?? fileConfig.outputDir ?? DEFAULT_CONFIG.outputDir,
     rules: {
       maxChunkSize:
         cliConfig.rules?.maxChunkSize ??
