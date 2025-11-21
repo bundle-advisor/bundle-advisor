@@ -14,7 +14,7 @@
   "tasks": {
     // --------------- Build ---------------
     "build": {
-      "dependsOn": ["gen:types", "^build"],
+      "dependsOn": ["^build"],
       "inputs": ["$TURBO_DEFAULT$", ".env*"],
       "outputs": [".build/**", "build/**", "dist/**", "storybook-static/**"]
     },
