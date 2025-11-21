@@ -28,9 +28,9 @@ You can create a `bundle-advisor.config.json` file in your project root to confi
 
 ```json
 {
-  "format": "json",
-  "output": "path/to/file.md",
-  "stats": "path/to/stats.json",
+  "reporter": "json",
+  "reportsDirectory": "path/to/file.md",
+  "statsFile": "path/to/stats.json",
   "rules": {
     "maxChunkSize": 256000,
     "maxModuleSize": 256000,
