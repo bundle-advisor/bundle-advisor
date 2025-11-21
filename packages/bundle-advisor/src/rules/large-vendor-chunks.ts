@@ -13,11 +13,11 @@ export type LargeVendorChunksRuleConfig = {
 export const createLargeVendorChunksRule =
   (config?: LargeVendorChunksRuleConfig): Rule =>
   analysis => {
-    const LARGE_CHUNK_THRESHOLD = config?.maxChunkSize ?? 250 * 1024 // 250KB
+    const MAX_SIZE = config?.maxChunkSize ?? 250 * 1024 // 250KB
     const issues: Issue[] = []
 
     for (const chunk of analysis.chunks) {
-      if (chunk.size <= LARGE_CHUNK_THRESHOLD) continue
+      if (chunk.size <= MAX_SIZE) continue
 
       // Check if chunk contains mostly vendor code
       const chunkModules = analysis.modules.filter(m => m.chunks.includes(chunk.id))

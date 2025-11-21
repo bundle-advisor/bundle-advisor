@@ -13,13 +13,13 @@ export type HugeModulesRuleConfig = {
 export const createHugeModulesRule =
   (config?: HugeModulesRuleConfig): Rule =>
   analysis => {
-    const HUGE_MODULE_THRESHOLD = config?.maxModuleSize ?? 200 * 1024 // 200KB
+    const MAX_SIZE = config?.maxModuleSize ?? 200 * 1024 // 200KB
     const issues: Issue[] = []
 
     for (const mod of analysis.modules) {
-      if (mod.size <= HUGE_MODULE_THRESHOLD) continue
+      if (mod.size <= MAX_SIZE) continue
 
-      const severity = mod.size > 500 * 1024 ? 'high' : 'medium'
+      const severity = mod.size > MAX_SIZE * 2 ? 'high' : 'medium'
 
       issues.push({
         id: generateIssueId(RULE_ID, mod.id),
