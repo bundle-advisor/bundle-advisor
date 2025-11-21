@@ -2,6 +2,27 @@
   "name": "bundle-advisor",
   "version": "0.3.0",
   "type": "module",
+  "license": "MIT",
+  "description": "A CLI tool to analyze JavaScript bundle stats and suggest performance optimizations.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jth0024/bundle-advisor.git",
+    "directory": "packages/bundle-advisor"
+  },
+  "keywords": [
+    "analyzer",
+    "bundle",
+    "bundle-analyzer",
+    "bundle-optimizer",
+    "bundle-stats",
+    "cli",
+    "load-time",
+    "optimization",
+    "performance",
+    "vite",
+    "webpack",
+    "web-vitals"
+  ],
   "bin": {
     "bundle-advisor": "./dist/cli/index.js"
   },
