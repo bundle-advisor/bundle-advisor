@@ -4,12 +4,12 @@ on:
   pull_request:
     types: [opened, ready_for_review, synchronize, reopened]
     branches:
-      - "main"
+      - "master"
   workflow_dispatch:
 
 env:
   NODE_OPTIONS: --max-old-space-size=16384
-  TURBO_SCM_BASE: origin/main
+  TURBO_SCM_BASE: origin/master
   TURBO_TEAM: ${{ secrets.VERCEL_ORG_ID }}
   TURBO_TOKEN: ${{ secrets.VERCEL_TOKEN }}
 
