@@ -1,6 +1,9 @@
 # bundle-advisor
 
+
 AI-assisted JavaScript bundle optimization with actionable recommendations.
+
+> Note: Bundle Advisor is currently in beta. Please expect (and report) any bugs, inaccurate recommendations, or other issues you encounter.
 
 ## Features
 
