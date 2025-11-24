@@ -5,16 +5,16 @@ import { RuleEngine } from '../../rules/engine.js'
 import { Analyzer } from '../analyzer.js'
 
 describe('Analyzer', () => {
-  it('should analyze webpack stats', () => {
+  it('should analyze rollup bundle stats', () => {
     const adapter = new RollupBundleStatsAdapter()
     const engine = new RuleEngine()
     const analyzer = new Analyzer(adapter, engine)
 
     const analysis = analyzer.analyze(stats)
 
-    expect(analysis.stats.totalAssetsSize).toBe(398993)
-    expect(analysis.stats.initialChunksSize).toBe(318373)
-    expect(analysis.modules.size).toBeGreaterThan(0)
-    expect(analysis.chunks.size).toBe(5)
+    expect(analysis.stats.totalAssetsSize).toBe(397820)
+    expect(analysis.stats.initialChunksSize).toBe(377861)
+    expect(analysis.modules.size).toBe(41)
+    expect(analysis.chunks.size).toBe(4)
   })
 })

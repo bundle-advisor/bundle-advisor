@@ -7,8 +7,8 @@
       "changed": false,
       "runs": [
         {
-          "value": 398993,
-          "displayValue": "389.64KiB"
+          "value": 397820,
+          "displayValue": "388.5KiB"
         }
       ]
     },
@@ -19,8 +19,8 @@
       "changed": false,
       "runs": [
         {
-          "value": 318373,
-          "displayValue": "310.91KiB"
+          "value": 377861,
+          "displayValue": "369KiB"
         }
       ]
     },
@@ -55,8 +55,8 @@
       "changed": false,
       "runs": [
         {
-          "value": 42,
-          "displayValue": "42"
+          "value": 41,
+          "displayValue": "41"
         }
       ]
     },
@@ -91,8 +91,8 @@
       "changed": false,
       "runs": [
         {
-          "value": 5,
-          "displayValue": "5"
+          "value": 4,
+          "displayValue": "4"
         }
       ]
     },
@@ -103,8 +103,8 @@
       "changed": false,
       "runs": [
         {
-          "value": 8,
-          "displayValue": "8"
+          "value": 7,
+          "displayValue": "7"
         }
       ]
     },
@@ -141,8 +141,8 @@
       "changed": false,
       "runs": [
         {
-          "value": 379034,
-          "displayValue": "370.15KiB"
+          "value": 377861,
+          "displayValue": "369KiB"
         }
       ]
     },
@@ -292,7 +292,7 @@
       "changed": false,
       "runs": [
         {
-          "name": "assets/root.BfBLKXkq.js",
+          "name": "assets/root.BCQO0z6_.js",
           "value": 1094,
           "isEntry": true,
           "isInitial": true,
@@ -309,13 +309,13 @@
       "changed": false,
       "runs": [
         {
-          "name": "assets/home.D1TD3VJY.js",
-          "value": 5014,
+          "name": "assets/home.B2IA44h6.js",
+          "value": 64502,
           "isEntry": true,
           "isInitial": true,
           "isChunk": true,
           "chunkId": "73e8398",
-          "displayValue": "4.9KiB"
+          "displayValue": "62.99KiB"
         }
       ]
     },
@@ -333,23 +333,6 @@
           "isChunk": true,
           "chunkId": "bdf54aa",
           "displayValue": "116.35KiB"
-        }
-      ]
-    },
-    {
-      "key": "assets/moment.js",
-      "label": "assets/moment.js",
-      "biggerIsBetter": false,
-      "changed": false,
-      "runs": [
-        {
-          "name": "assets/moment.D49LY7BA.js",
-          "value": 60661,
-          "isEntry": false,
-          "isInitial": false,
-          "isChunk": true,
-          "chunkId": "347ee14",
-          "displayValue": "59.24KiB"
         }
       ]
     }
@@ -701,17 +684,17 @@
       ]
     },
     {
-      "key": "./vite/preload-helper.js",
-      "label": "./vite/preload-helper.js",
+      "key": "../../node_modules/.pnpm/moment@2.30.1/node_modules/moment/dist/moment.js",
+      "label": "../../node_modules/.pnpm/moment@2.30.1/node_modules/moment/dist/moment.js",
       "biggerIsBetter": false,
       "changed": false,
       "runs": [
         {
-          "name": "./vite/preload-helper.js",
-          "value": 1877,
+          "name": "../../node_modules/.pnpm/moment@2.30.1/node_modules/moment/dist/moment.js",
+          "value": 156228,
           "chunkIds": ["73e8398"],
-          "originalValue": 1877,
-          "displayValue": "1.83KiB"
+          "originalValue": 156228,
+          "displayValue": "152.57KiB"
         }
       ]
     },
@@ -753,10 +736,10 @@
       "runs": [
         {
           "name": "./app/welcome/welcome.tsx",
-          "value": 5084,
+          "value": 4939,
           "chunkIds": ["73e8398"],
-          "originalValue": 5084,
-          "displayValue": "4.96KiB"
+          "originalValue": 4939,
+          "displayValue": "4.82KiB"
         }
       ]
     },
@@ -768,10 +751,10 @@
       "runs": [
         {
           "name": "./app/routes/home.tsx",
-          "value": 259,
+          "value": 258,
           "chunkIds": ["73e8398"],
-          "originalValue": 259,
-          "displayValue": "259B"
+          "originalValue": 258,
+          "displayValue": "258B"
         }
       ]
     },
@@ -969,21 +952,6 @@
           "displayValue": "260.93KiB"
         }
       ]
-    },
-    {
-      "key": "../../node_modules/.pnpm/moment@2.30.1/node_modules/moment/dist/moment.js",
-      "label": "../../node_modules/.pnpm/moment@2.30.1/node_modules/moment/dist/moment.js",
-      "biggerIsBetter": false,
-      "changed": false,
-      "runs": [
-        {
-          "name": "../../node_modules/.pnpm/moment@2.30.1/node_modules/moment/dist/moment.js",
-          "value": 156228,
-          "chunkIds": ["347ee14"],
-          "originalValue": 156228,
-          "displayValue": "152.57KiB"
-        }
-      ]
     }
   ],
   "packages": [
@@ -1058,20 +1026,6 @@
       ]
     },
     {
-      "key": "react",
-      "label": "react",
-      "biggerIsBetter": false,
-      "changed": false,
-      "runs": [
-        {
-          "name": "react",
-          "path": "../../node_modules/.pnpm/react@19.2.0/node_modules/react",
-          "value": 20312,
-          "displayValue": "19.84KiB"
-        }
-      ]
-    },
-    {
       "key": "moment",
       "label": "moment",
       "biggerIsBetter": false,
@@ -1084,9 +1038,23 @@
           "displayValue": "152.57KiB"
         }
       ]
+    },
+    {
+      "key": "react",
+      "label": "react",
+      "biggerIsBetter": false,
+      "changed": false,
+      "runs": [
+        {
+          "name": "react",
+          "path": "../../node_modules/.pnpm/react@19.2.0/node_modules/react",
+          "value": 20312,
+          "displayValue": "19.84KiB"
+        }
+      ]
     }
   ],
-  "createdAt": "2025-11-22T14:55:06.137Z",
+  "createdAt": "2025-11-24T03:22:04.086Z",
   "version": "4.21.6",
   "runs": [
     {
@@ -1107,13 +1075,9 @@
           {
             "id": "bdf54aa",
             "name": "chunk-4WY6JWTD"
-          },
-          {
-            "id": "347ee14",
-            "name": "moment"
           }
         ],
-        "builtAt": "2025-11-22T14:55:06.129Z",
+        "builtAt": "2025-11-24T03:22:04.077Z",
         "hash": ""
       },
       "internalBuildNumber": 1
@@ -1122,22 +1086,22 @@
   "summary": {
     "webpack": [
       {
-        "value": 398993,
-        "displayValue": "389.64KiB",
-        "delta": 398993,
+        "value": 397820,
+        "displayValue": "388.5KiB",
+        "delta": 397820,
         "deltaPercentage": 100,
-        "displayDelta": "+389.64KiB",
+        "displayDelta": "+388.5KiB",
         "displayDeltaPercentage": "+100%",
         "deltaType": "HIGH_NEGATIVE",
         "regression": true,
         "label": "Bundle Size"
       },
       {
-        "value": 318373,
-        "displayValue": "310.91KiB",
-        "delta": 318373,
+        "value": 377861,
+        "displayValue": "369KiB",
+        "delta": 377861,
         "deltaPercentage": 100,
-        "displayDelta": "+310.91KiB",
+        "displayDelta": "+369KiB",
         "displayDeltaPercentage": "+100%",
         "deltaType": "HIGH_NEGATIVE",
         "regression": true,
@@ -1165,11 +1129,11 @@
         "label": "Cache Invalidation"
       },
       {
-        "value": 42,
-        "displayValue": "42",
-        "delta": 42,
+        "value": 41,
+        "displayValue": "41",
+        "delta": 41,
         "deltaPercentage": 100,
-        "displayDelta": "+42",
+        "displayDelta": "+41",
         "displayDeltaPercentage": "+100%",
         "deltaType": "CHANGE",
         "regression": null,
@@ -1197,22 +1161,22 @@
         "label": "Duplicate Code"
       },
       {
-        "value": 5,
-        "displayValue": "5",
-        "delta": 5,
+        "value": 4,
+        "displayValue": "4",
+        "delta": 4,
         "deltaPercentage": 100,
-        "displayDelta": "+5",
+        "displayDelta": "+4",
         "displayDeltaPercentage": "+100%",
         "deltaType": "CHANGE",
         "regression": null,
         "label": "Chunks"
       },
       {
-        "value": 8,
-        "displayValue": "8",
-        "delta": 8,
+        "value": 7,
+        "displayValue": "7",
+        "delta": 7,
         "deltaPercentage": 100,
-        "displayDelta": "+8",
+        "displayDelta": "+7",
         "displayDeltaPercentage": "+100%",
         "deltaType": "CHANGE",
         "regression": null,
@@ -1246,14 +1210,14 @@
       "assetsSizeTotal": {
         "type": "info",
         "data": {
-          "text": "Bundle Size — 389.64KiB (+100%).",
-          "md": "*Bundle Size* — *389.64KiB* (*+100%*).",
+          "text": "Bundle Size — 388.5KiB (+100%).",
+          "md": "*Bundle Size* — *388.5KiB* (*+100%*).",
           "info": {
-            "value": 398993,
-            "displayValue": "389.64KiB",
-            "delta": 398993,
+            "value": 397820,
+            "displayValue": "388.5KiB",
+            "delta": 397820,
             "deltaPercentage": 100,
-            "displayDelta": "+389.64KiB",
+            "displayDelta": "+388.5KiB",
             "displayDeltaPercentage": "+100%",
             "deltaType": "HIGH_NEGATIVE",
             "regression": true

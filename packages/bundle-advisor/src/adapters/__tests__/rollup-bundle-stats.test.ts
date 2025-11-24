@@ -15,14 +15,14 @@ describe('RollupPluginBundleStatsAdapter', () => {
     const adapter = new RollupBundleStatsAdapter()
 
     const bundle = adapter.toNormalizedBundle(rawStats)
-    expect(bundle.chunks.size).toBe(5)
-    expect(bundle.assets.size).toBe(8)
+    expect(bundle.chunks.size).toBe(4)
+    expect(bundle.assets.size).toBe(7)
     expect(bundle.packages.size).toBe(7)
-    expect(bundle.modules.size).toBe(42)
+    expect(bundle.modules.size).toBe(41)
 
     const home = bundle.modules.get('./app/routes/home.tsx')
     expect(home).toBeDefined()
-    expect(home?.size).toBe(259)
+    expect(home?.size).toBe(258)
     expect(home?.chunks).toEqual(['73e8398'])
   })
 })
