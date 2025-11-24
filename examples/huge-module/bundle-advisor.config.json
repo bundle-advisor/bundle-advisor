@@ -1,0 +1,7 @@
+{
+  "statsFile": "build/client/bundle-stats.json",
+  "outputDir": "bundle-reports",
+  "rules": {
+    "maxModuleSize": 150000
+  }
+}

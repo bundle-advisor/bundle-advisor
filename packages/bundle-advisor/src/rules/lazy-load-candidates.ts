@@ -17,7 +17,7 @@ export const createLazyLoadCandidatesRule =
     const issues: Issue[] = []
 
     // Find initial chunks that could potentially be lazy loaded
-    for (const chunk of analysis.chunks) {
+    for (const chunk of analysis.chunks.values()) {
       if (!chunk.isInitial || chunk.size <= LAZY_LOAD_THRESHOLD) continue
 
       // Skip the main entry chunk (no entry point names usually means it's the main bundle)

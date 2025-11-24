@@ -12,11 +12,16 @@
     "VITE_*"
   ],
   "tasks": {
+    "analyze:bundles": {
+      "dependsOn": ["build"],
+      "inputs": ["$TURBO_DEFAULT$", "build/**"],
+      "outputs": ["bundle-reports/**"]
+    },
     // --------------- Build ---------------
     "build": {
       "dependsOn": ["^build"],
       "inputs": ["$TURBO_DEFAULT$", ".env*"],
-      "outputs": [".build/**", "build/**", "dist/**", "storybook-static/**"]
+      "outputs": [".build/**", "build/**", "dist/**", "storybook-static/**", ".react-router/**"]
     },
 
     // --------------- Check ---------------

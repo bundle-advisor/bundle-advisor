@@ -1,8 +1,8 @@
-import type { AIEnhancedReport, RawReport } from '../types.js'
+import type { AIEnhancedBundleAnalysis, BundleAnalysis } from '../types.js'
 
 /**
  * Generate a JSON report
  */
-export function generateJsonReport(report: RawReport | AIEnhancedReport): string {
-  return JSON.stringify(report, null, 2)
+export function generateJsonReport(analysis: BundleAnalysis | AIEnhancedBundleAnalysis): string {
+  return JSON.stringify(analysis, null, 2)
 }

@@ -16,7 +16,7 @@ export const createHugeModulesRule =
     const MAX_SIZE = config?.maxModuleSize ?? 200 * 1024 // 200KB
     const issues: Issue[] = []
 
-    for (const mod of analysis.modules) {
+    for (const mod of analysis.modules.values()) {
       if (mod.size <= MAX_SIZE) continue
 
       const severity = mod.size > MAX_SIZE * 2 ? 'high' : 'medium'

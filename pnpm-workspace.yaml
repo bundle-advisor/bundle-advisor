@@ -1,7 +1,7 @@
 packages:
-  - apps/*
+  - docs/
+  - examples/*
   - packages/*
-  - templates/*
   - .github/actions/*
 
 catalog:

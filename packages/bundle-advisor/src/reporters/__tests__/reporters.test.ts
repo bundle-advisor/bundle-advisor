@@ -1,32 +1,40 @@
 import { describe, expect, it } from 'vitest'
-import { generateJsonReport, generateMarkdownReport } from '../reporters/index.js'
-import type { RawReport } from '../types.js'
+import type { BundleAnalysis } from '../../types.js'
+import { generateJsonReport, generateMarkdownReport } from '../index.js'
 
 describe('Report Generators', () => {
-  const sampleReport: RawReport = {
-    analysis: {
-      totalSize: 500000,
-      initialSize: 300000,
-      modules: [
+  const sampleReport: BundleAnalysis = {
+    stats: {
+      totalAssetsSize: 500000,
+      initialChunksSize: 300000,
+    },
+    assets: new Map(),
+    packages: new Map(),
+    modules: new Map([
+      [
+        '0',
         {
           id: '0',
           size: 100000,
+          path: 'src/index.js',
           chunks: ['main'],
           isVendor: false,
         },
       ],
-      chunks: [
+    ]),
+    chunks: new Map([
+      [
+        'main',
         {
           id: 'main',
+          name: 'main',
           size: 300000,
           modules: ['0'],
           entryPoints: ['main'],
           isInitial: true,
         },
       ],
-      duplicatePackages: [],
-      largeModules: [],
-    },
+    ]),
     issues: [
       {
         id: 'test-issue-1',
@@ -46,7 +54,11 @@ describe('Report Generators', () => {
     const json = generateJsonReport(sampleReport)
     const parsed = JSON.parse(json)
 
-    expect(parsed.analysis).toBeDefined()
+    expect(parsed.stats).toBeDefined()
+    expect(parsed.modules).toBeDefined()
+    expect(parsed.chunks).toBeDefined()
+    expect(parsed.packages).toBeDefined()
+    expect(parsed.assets).toBeDefined()
     expect(parsed.issues).toBeDefined()
     expect(parsed.issues.length).toBe(1)
   })
@@ -61,7 +73,7 @@ describe('Report Generators', () => {
   })
 
   it('should handle report with no issues', () => {
-    const emptyReport: RawReport = {
+    const emptyReport: BundleAnalysis = {
       ...sampleReport,
       issues: [],
     }

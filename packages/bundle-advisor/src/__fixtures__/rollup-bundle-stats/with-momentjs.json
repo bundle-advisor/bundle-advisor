@@ -1,0 +1,1229 @@
+{
+  "stats": [
+    {
+      "key": "webpack.totalSizeByTypeALL",
+      "label": "Bundle Size",
+      "biggerIsBetter": false,
+      "changed": false,
+      "runs": [
+        {
+          "value": 397820,
+          "displayValue": "388.5KiB"
+        }
+      ]
+    },
+    {
+      "key": "webpack.totalInitialSizeJS",
+      "label": "Initial JS",
+      "biggerIsBetter": false,
+      "changed": false,
+      "runs": [
+        {
+          "value": 377861,
+          "displayValue": "369KiB"
+        }
+      ]
+    },
+    {
+      "key": "webpack.totalInitialSizeCSS",
+      "label": "Initial CSS",
+      "biggerIsBetter": false,
+      "changed": false,
+      "runs": [
+        {
+          "value": 0,
+          "displayValue": "0B"
+        }
+      ]
+    },
+    {
+      "key": "webpack.cacheInvalidation",
+      "label": "Cache Invalidation",
+      "biggerIsBetter": null,
+      "changed": false,
+      "runs": [
+        {
+          "value": 0,
+          "displayValue": "0%"
+        }
+      ]
+    },
+    {
+      "key": "webpack.moduleCount",
+      "label": "Modules",
+      "biggerIsBetter": null,
+      "changed": false,
+      "runs": [
+        {
+          "value": 41,
+          "displayValue": "41"
+        }
+      ]
+    },
+    {
+      "key": "webpack.duplicateModulesCount",
+      "label": "Duplicate Modules",
+      "biggerIsBetter": false,
+      "changed": false,
+      "runs": [
+        {
+          "value": 0,
+          "displayValue": "0"
+        }
+      ]
+    },
+    {
+      "key": "webpack.duplicateCode",
+      "label": "Duplicate Code",
+      "biggerIsBetter": null,
+      "changed": false,
+      "runs": [
+        {
+          "value": 0,
+          "displayValue": "0%"
+        }
+      ]
+    },
+    {
+      "key": "webpack.chunkCount",
+      "label": "Chunks",
+      "biggerIsBetter": null,
+      "changed": false,
+      "runs": [
+        {
+          "value": 4,
+          "displayValue": "4"
+        }
+      ]
+    },
+    {
+      "key": "webpack.assetCount",
+      "label": "Assets",
+      "biggerIsBetter": null,
+      "changed": false,
+      "runs": [
+        {
+          "value": 7,
+          "displayValue": "7"
+        }
+      ]
+    },
+    {
+      "key": "webpack.packageCount",
+      "label": "Packages",
+      "biggerIsBetter": false,
+      "changed": false,
+      "runs": [
+        {
+          "value": 7,
+          "displayValue": "7"
+        }
+      ]
+    },
+    {
+      "key": "webpack.duplicatePackagesCount",
+      "label": "Duplicate Packages",
+      "biggerIsBetter": false,
+      "changed": false,
+      "runs": [
+        {
+          "value": 0,
+          "displayValue": "0"
+        }
+      ]
+    }
+  ],
+  "sizes": [
+    {
+      "key": "webpack.sizes.totalSizeByTypeJS",
+      "label": "JS",
+      "biggerIsBetter": false,
+      "changed": false,
+      "runs": [
+        {
+          "value": 377861,
+          "displayValue": "369KiB"
+        }
+      ]
+    },
+    {
+      "key": "webpack.sizes.totalSizeByTypeCSS",
+      "label": "CSS",
+      "biggerIsBetter": false,
+      "changed": false,
+      "runs": [
+        {
+          "value": 7732,
+          "displayValue": "7.55KiB"
+        }
+      ]
+    },
+    {
+      "key": "webpack.sizes.totalSizeByTypeIMG",
+      "label": "IMG",
+      "biggerIsBetter": false,
+      "changed": false,
+      "runs": [
+        {
+          "value": 12227,
+          "displayValue": "11.94KiB"
+        }
+      ]
+    },
+    {
+      "key": "webpack.sizes.totalSizeByTypeMEDIA",
+      "label": "Media",
+      "biggerIsBetter": false,
+      "changed": false,
+      "runs": [
+        {
+          "value": 0,
+          "displayValue": "0B"
+        }
+      ]
+    },
+    {
+      "key": "webpack.sizes.totalSizeByTypeFONT",
+      "label": "Fonts",
+      "biggerIsBetter": false,
+      "changed": false,
+      "runs": [
+        {
+          "value": 0,
+          "displayValue": "0B"
+        }
+      ]
+    },
+    {
+      "key": "webpack.sizes.totalSizeByTypeHTML",
+      "label": "HTML",
+      "biggerIsBetter": false,
+      "changed": false,
+      "runs": [
+        {
+          "value": 0,
+          "displayValue": "0B"
+        }
+      ]
+    },
+    {
+      "key": "webpack.sizes.totalSizeByTypeOTHER",
+      "label": "Other",
+      "biggerIsBetter": false,
+      "changed": false,
+      "runs": [
+        {
+          "value": 0,
+          "displayValue": "0B"
+        }
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "key": "assets/logo-dark.svg",
+      "label": "assets/logo-dark.svg",
+      "biggerIsBetter": false,
+      "changed": false,
+      "runs": [
+        {
+          "name": "assets/logo-dark.pX2395Y0.svg",
+          "value": 6098,
+          "isEntry": false,
+          "isInitial": false,
+          "isChunk": false,
+          "displayValue": "5.96KiB"
+        }
+      ]
+    },
+    {
+      "key": "assets/logo-light.svg",
+      "label": "assets/logo-light.svg",
+      "biggerIsBetter": false,
+      "changed": false,
+      "runs": [
+        {
+          "name": "assets/logo-light.CVbx2LBR.svg",
+          "value": 6129,
+          "isEntry": false,
+          "isInitial": false,
+          "isChunk": false,
+          "displayValue": "5.99KiB"
+        }
+      ]
+    },
+    {
+      "key": "assets/root.css",
+      "label": "assets/root.css",
+      "biggerIsBetter": false,
+      "changed": false,
+      "runs": [
+        {
+          "name": "assets/root.BrAzMOzt.css",
+          "value": 7732,
+          "isEntry": false,
+          "isInitial": false,
+          "isChunk": false,
+          "displayValue": "7.55KiB"
+        }
+      ]
+    },
+    {
+      "key": "assets/entry.client.js",
+      "label": "assets/entry.client.js",
+      "biggerIsBetter": false,
+      "changed": false,
+      "runs": [
+        {
+          "name": "assets/entry.client.CTCynO2F.js",
+          "value": 193125,
+          "isEntry": true,
+          "isInitial": true,
+          "isChunk": true,
+          "chunkId": "0f671b2",
+          "displayValue": "188.6KiB"
+        }
+      ]
+    },
+    {
+      "key": "assets/root.js",
+      "label": "assets/root.js",
+      "biggerIsBetter": false,
+      "changed": false,
+      "runs": [
+        {
+          "name": "assets/root.BCQO0z6_.js",
+          "value": 1094,
+          "isEntry": true,
+          "isInitial": true,
+          "isChunk": true,
+          "chunkId": "f308ea3",
+          "displayValue": "1.07KiB"
+        }
+      ]
+    },
+    {
+      "key": "assets/home.js",
+      "label": "assets/home.js",
+      "biggerIsBetter": false,
+      "changed": false,
+      "runs": [
+        {
+          "name": "assets/home.B2IA44h6.js",
+          "value": 64502,
+          "isEntry": true,
+          "isInitial": true,
+          "isChunk": true,
+          "chunkId": "73e8398",
+          "displayValue": "62.99KiB"
+        }
+      ]
+    },
+    {
+      "key": "assets/chunk-4WY6JWTD.js",
+      "label": "assets/chunk-4WY6JWTD.js",
+      "biggerIsBetter": false,
+      "changed": false,
+      "runs": [
+        {
+          "name": "assets/chunk-4WY6JWTD.CgRXpLqU.js",
+          "value": 119140,
+          "isEntry": false,
+          "isInitial": true,
+          "isChunk": true,
+          "chunkId": "bdf54aa",
+          "displayValue": "116.35KiB"
+        }
+      ]
+    }
+  ],
+  "modules": [
+    {
+      "key": "../../node_modules/.pnpm/react-dom@19.2.0_react@19.2.0/node_modules/react-dom/client.js?commonjs-module",
+      "label": "../../node_modules/.pnpm/react-dom@19.2.0_react@19.2.0/node_modules/react-dom/client.js?commonjs-module",
+      "biggerIsBetter": false,
+      "changed": false,
+      "runs": [
+        {
+          "name": "../../node_modules/.pnpm/react-dom@19.2.0_react@19.2.0/node_modules/react-dom/client.js?commonjs-module",
+          "value": 27,
+          "chunkIds": ["0f671b2"],
+          "originalValue": 27,
+          "displayValue": "27B"
+        }
+      ]
+    },
+    {
+      "key": "../../node_modules/.pnpm/react-dom@19.2.0_react@19.2.0/node_modules/react-dom/cjs/react-dom-client.production.js?commonjs-exports",
+      "label": "../../node_modules/.pnpm/react-dom@19.2.0_react@19.2.0/node_modules/react-dom/cjs/react-dom-client.production.js?commonjs-exports",
+      "biggerIsBetter": false,
+      "changed": false,
+      "runs": [
+        {
+          "name": "../../node_modules/.pnpm/react-dom@19.2.0_react@19.2.0/node_modules/react-dom/cjs/react-dom-client.production.js?commonjs-exports",
+          "value": 35,
+          "chunkIds": ["0f671b2"],
+          "originalValue": 35,
+          "displayValue": "35B"
+        }
+      ]
+    },
+    {
+      "key": "../../node_modules/.pnpm/scheduler@0.27.0/node_modules/scheduler/index.js?commonjs-module",
+      "label": "../../node_modules/.pnpm/scheduler@0.27.0/node_modules/scheduler/index.js?commonjs-module",
+      "biggerIsBetter": false,
+      "changed": false,
+      "runs": [
+        {
+          "name": "../../node_modules/.pnpm/scheduler@0.27.0/node_modules/scheduler/index.js?commonjs-module",
+          "value": 30,
+          "chunkIds": ["0f671b2"],
+          "originalValue": 30,
+          "displayValue": "30B"
+        }
+      ]
+    },
+    {
+      "key": "../../node_modules/.pnpm/scheduler@0.27.0/node_modules/scheduler/cjs/scheduler.production.js?commonjs-exports",
+      "label": "../../node_modules/.pnpm/scheduler@0.27.0/node_modules/scheduler/cjs/scheduler.production.js?commonjs-exports",
+      "biggerIsBetter": false,
+      "changed": false,
+      "runs": [
+        {
+          "name": "../../node_modules/.pnpm/scheduler@0.27.0/node_modules/scheduler/cjs/scheduler.production.js?commonjs-exports",
+          "value": 30,
+          "chunkIds": ["0f671b2"],
+          "originalValue": 30,
+          "displayValue": "30B"
+        }
+      ]
+    },
+    {
+      "key": "../../node_modules/.pnpm/scheduler@0.27.0/node_modules/scheduler/cjs/scheduler.production.js",
+      "label": "../../node_modules/.pnpm/scheduler@0.27.0/node_modules/scheduler/cjs/scheduler.production.js",
+      "biggerIsBetter": false,
+      "changed": false,
+      "runs": [
+        {
+          "name": "../../node_modules/.pnpm/scheduler@0.27.0/node_modules/scheduler/cjs/scheduler.production.js",
+          "value": 11134,
+          "chunkIds": ["0f671b2"],
+          "originalValue": 11134,
+          "displayValue": "10.87KiB"
+        }
+      ]
+    },
+    {
+      "key": "../../node_modules/.pnpm/scheduler@0.27.0/node_modules/scheduler/index.js",
+      "label": "../../node_modules/.pnpm/scheduler@0.27.0/node_modules/scheduler/index.js",
+      "biggerIsBetter": false,
+      "changed": false,
+      "runs": [
+        {
+          "name": "../../node_modules/.pnpm/scheduler@0.27.0/node_modules/scheduler/index.js",
+          "value": 226,
+          "chunkIds": ["0f671b2"],
+          "originalValue": 226,
+          "displayValue": "226B"
+        }
+      ]
+    },
+    {
+      "key": "../../node_modules/.pnpm/react-dom@19.2.0_react@19.2.0/node_modules/react-dom/index.js?commonjs-module",
+      "label": "../../node_modules/.pnpm/react-dom@19.2.0_react@19.2.0/node_modules/react-dom/index.js?commonjs-module",
+      "biggerIsBetter": false,
+      "changed": false,
+      "runs": [
+        {
+          "name": "../../node_modules/.pnpm/react-dom@19.2.0_react@19.2.0/node_modules/react-dom/index.js?commonjs-module",
+          "value": 29,
+          "chunkIds": ["0f671b2"],
+          "originalValue": 29,
+          "displayValue": "29B"
+        }
+      ]
+    },
+    {
+      "key": "../../node_modules/.pnpm/react-dom@19.2.0_react@19.2.0/node_modules/react-dom/cjs/react-dom.production.js?commonjs-exports",
+      "label": "../../node_modules/.pnpm/react-dom@19.2.0_react@19.2.0/node_modules/react-dom/cjs/react-dom.production.js?commonjs-exports",
+      "biggerIsBetter": false,
+      "changed": false,
+      "runs": [
+        {
+          "name": "../../node_modules/.pnpm/react-dom@19.2.0_react@19.2.0/node_modules/react-dom/cjs/react-dom.production.js?commonjs-exports",
+          "value": 29,
+          "chunkIds": ["0f671b2"],
+          "originalValue": 29,
+          "displayValue": "29B"
+        }
+      ]
+    },
+    {
+      "key": "../../node_modules/.pnpm/react-dom@19.2.0_react@19.2.0/node_modules/react-dom/cjs/react-dom.production.js",
+      "label": "../../node_modules/.pnpm/react-dom@19.2.0_react@19.2.0/node_modules/react-dom/cjs/react-dom.production.js",
+      "biggerIsBetter": false,
+      "changed": false,
+      "runs": [
+        {
+          "name": "../../node_modules/.pnpm/react-dom@19.2.0_react@19.2.0/node_modules/react-dom/cjs/react-dom.production.js",
+          "value": 7216,
+          "chunkIds": ["0f671b2"],
+          "originalValue": 7216,
+          "displayValue": "7.05KiB"
+        }
+      ]
+    },
+    {
+      "key": "../../node_modules/.pnpm/react-dom@19.2.0_react@19.2.0/node_modules/react-dom/index.js",
+      "label": "../../node_modules/.pnpm/react-dom@19.2.0_react@19.2.0/node_modules/react-dom/index.js",
+      "biggerIsBetter": false,
+      "changed": false,
+      "runs": [
+        {
+          "name": "../../node_modules/.pnpm/react-dom@19.2.0_react@19.2.0/node_modules/react-dom/index.js",
+          "value": 520,
+          "chunkIds": ["0f671b2"],
+          "originalValue": 520,
+          "displayValue": "520B"
+        }
+      ]
+    },
+    {
+      "key": "../../node_modules/.pnpm/react-dom@19.2.0_react@19.2.0/node_modules/react-dom/cjs/react-dom-client.production.js",
+      "label": "../../node_modules/.pnpm/react-dom@19.2.0_react@19.2.0/node_modules/react-dom/cjs/react-dom-client.production.js",
+      "biggerIsBetter": false,
+      "changed": false,
+      "runs": [
+        {
+          "name": "../../node_modules/.pnpm/react-dom@19.2.0_react@19.2.0/node_modules/react-dom/cjs/react-dom-client.production.js",
+          "value": 552879,
+          "chunkIds": ["0f671b2"],
+          "originalValue": 552879,
+          "displayValue": "539.92KiB"
+        }
+      ]
+    },
+    {
+      "key": "../../node_modules/.pnpm/react-dom@19.2.0_react@19.2.0/node_modules/react-dom/client.js",
+      "label": "../../node_modules/.pnpm/react-dom@19.2.0_react@19.2.0/node_modules/react-dom/client.js",
+      "biggerIsBetter": false,
+      "changed": false,
+      "runs": [
+        {
+          "name": "../../node_modules/.pnpm/react-dom@19.2.0_react@19.2.0/node_modules/react-dom/client.js",
+          "value": 512,
+          "chunkIds": ["0f671b2"],
+          "originalValue": 512,
+          "displayValue": "512B"
+        }
+      ]
+    },
+    {
+      "key": "../../node_modules/.pnpm/react-dom@19.2.0_react@19.2.0/node_modules/react-dom/client.js?commonjs-es-import",
+      "label": "../../node_modules/.pnpm/react-dom@19.2.0_react@19.2.0/node_modules/react-dom/client.js?commonjs-es-import",
+      "biggerIsBetter": false,
+      "changed": false,
+      "runs": [
+        {
+          "name": "../../node_modules/.pnpm/react-dom@19.2.0_react@19.2.0/node_modules/react-dom/client.js?commonjs-es-import",
+          "value": 36,
+          "chunkIds": ["0f671b2"],
+          "originalValue": 36,
+          "displayValue": "36B"
+        }
+      ]
+    },
+    {
+      "key": "../../node_modules/.pnpm/cookie@1.0.2/node_modules/cookie/dist/index.js?commonjs-exports",
+      "label": "../../node_modules/.pnpm/cookie@1.0.2/node_modules/cookie/dist/index.js?commonjs-exports",
+      "biggerIsBetter": false,
+      "changed": false,
+      "runs": [
+        {
+          "name": "../../node_modules/.pnpm/cookie@1.0.2/node_modules/cookie/dist/index.js?commonjs-exports",
+          "value": 14,
+          "chunkIds": ["0f671b2"],
+          "originalValue": 14,
+          "displayValue": "14B"
+        }
+      ]
+    },
+    {
+      "key": "../../node_modules/.pnpm/cookie@1.0.2/node_modules/cookie/dist/index.js",
+      "label": "../../node_modules/.pnpm/cookie@1.0.2/node_modules/cookie/dist/index.js",
+      "biggerIsBetter": false,
+      "changed": false,
+      "runs": [
+        {
+          "name": "../../node_modules/.pnpm/cookie@1.0.2/node_modules/cookie/dist/index.js",
+          "value": 8643,
+          "chunkIds": ["0f671b2"],
+          "originalValue": 8643,
+          "displayValue": "8.44KiB"
+        }
+      ]
+    },
+    {
+      "key": "../../node_modules/.pnpm/cookie@1.0.2/node_modules/cookie/dist/index.js?commonjs-es-import",
+      "label": "../../node_modules/.pnpm/cookie@1.0.2/node_modules/cookie/dist/index.js?commonjs-es-import",
+      "biggerIsBetter": false,
+      "changed": false,
+      "runs": [
+        {
+          "name": "../../node_modules/.pnpm/cookie@1.0.2/node_modules/cookie/dist/index.js?commonjs-es-import",
+          "value": 14,
+          "chunkIds": ["0f671b2"],
+          "originalValue": 14,
+          "displayValue": "14B"
+        }
+      ]
+    },
+    {
+      "key": "../../node_modules/.pnpm/react-router@7.9.6_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/react-router/dist/development/chunk-G3INQAYP.mjs",
+      "label": "../../node_modules/.pnpm/react-router@7.9.6_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/react-router/dist/development/chunk-G3INQAYP.mjs",
+      "biggerIsBetter": false,
+      "changed": false,
+      "runs": [
+        {
+          "name": "../../node_modules/.pnpm/react-router@7.9.6_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/react-router/dist/development/chunk-G3INQAYP.mjs",
+          "value": 4829,
+          "chunkIds": ["0f671b2"],
+          "originalValue": 4829,
+          "displayValue": "4.72KiB"
+        }
+      ]
+    },
+    {
+      "key": "../../node_modules/.pnpm/react-dom@19.2.0_react@19.2.0/node_modules/react-dom/index.js?commonjs-es-import",
+      "label": "../../node_modules/.pnpm/react-dom@19.2.0_react@19.2.0/node_modules/react-dom/index.js?commonjs-es-import",
+      "biggerIsBetter": false,
+      "changed": false,
+      "runs": [
+        {
+          "name": "../../node_modules/.pnpm/react-dom@19.2.0_react@19.2.0/node_modules/react-dom/index.js?commonjs-es-import",
+          "value": 40,
+          "chunkIds": ["0f671b2"],
+          "originalValue": 40,
+          "displayValue": "40B"
+        }
+      ]
+    },
+    {
+      "key": "../../node_modules/.pnpm/react-router@7.9.6_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/react-router/dist/development/dom-export.mjs",
+      "label": "../../node_modules/.pnpm/react-router@7.9.6_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/react-router/dist/development/dom-export.mjs",
+      "biggerIsBetter": false,
+      "changed": false,
+      "runs": [
+        {
+          "name": "../../node_modules/.pnpm/react-router@7.9.6_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/react-router/dist/development/dom-export.mjs",
+          "value": 6305,
+          "chunkIds": ["0f671b2"],
+          "originalValue": 6305,
+          "displayValue": "6.16KiB"
+        }
+      ]
+    },
+    {
+      "key": "../../node_modules/.pnpm/@react-router+dev@7.9.6_@react-router+serve@7.9.6_react-router@7.9.6_react-dom@19.2.0_r_4edf341b885e1cd0953c68295d1900d6/node_modules/@react-router/dev/dist/config/defaults/entry.client.tsx",
+      "label": "../../node_modules/.pnpm/@react-router+dev@7.9.6_@react-router+serve@7.9.6_react-router@7.9.6_react-dom@19.2.0_r_4edf341b885e1cd0953c68295d1900d6/node_modules/@react-router/dev/dist/config/defaults/entry.client.tsx",
+      "biggerIsBetter": false,
+      "changed": false,
+      "runs": [
+        {
+          "name": "../../node_modules/.pnpm/@react-router+dev@7.9.6_@react-router+serve@7.9.6_react-router@7.9.6_react-dom@19.2.0_r_4edf341b885e1cd0953c68295d1900d6/node_modules/@react-router/dev/dist/config/defaults/entry.client.tsx",
+          "value": 228,
+          "chunkIds": ["0f671b2"],
+          "originalValue": 228,
+          "displayValue": "228B"
+        }
+      ]
+    },
+    {
+      "key": "./app/app.css",
+      "label": "./app/app.css",
+      "biggerIsBetter": false,
+      "changed": false,
+      "runs": [
+        {
+          "name": "./app/app.css",
+          "value": 0,
+          "chunkIds": ["f308ea3"],
+          "originalValue": 0,
+          "displayValue": "0B"
+        }
+      ]
+    },
+    {
+      "key": "./app/root.tsx",
+      "label": "./app/root.tsx",
+      "biggerIsBetter": false,
+      "changed": false,
+      "runs": [
+        {
+          "name": "./app/root.tsx",
+          "value": 1826,
+          "chunkIds": ["f308ea3"],
+          "originalValue": 1826,
+          "displayValue": "1.78KiB"
+        }
+      ]
+    },
+    {
+      "key": "./app/root.tsx?__react-router-build-client-route",
+      "label": "./app/root.tsx?__react-router-build-client-route",
+      "biggerIsBetter": false,
+      "changed": false,
+      "runs": [
+        {
+          "name": "./app/root.tsx?__react-router-build-client-route",
+          "value": 0,
+          "chunkIds": ["f308ea3"],
+          "originalValue": 0,
+          "displayValue": "0B"
+        }
+      ]
+    },
+    {
+      "key": "../../node_modules/.pnpm/moment@2.30.1/node_modules/moment/dist/moment.js",
+      "label": "../../node_modules/.pnpm/moment@2.30.1/node_modules/moment/dist/moment.js",
+      "biggerIsBetter": false,
+      "changed": false,
+      "runs": [
+        {
+          "name": "../../node_modules/.pnpm/moment@2.30.1/node_modules/moment/dist/moment.js",
+          "value": 156228,
+          "chunkIds": ["73e8398"],
+          "originalValue": 156228,
+          "displayValue": "152.57KiB"
+        }
+      ]
+    },
+    {
+      "key": "./app/welcome/logo-dark.svg",
+      "label": "./app/welcome/logo-dark.svg",
+      "biggerIsBetter": false,
+      "changed": false,
+      "runs": [
+        {
+          "name": "./app/welcome/logo-dark.svg",
+          "value": 44,
+          "chunkIds": ["73e8398"],
+          "originalValue": 44,
+          "displayValue": "44B"
+        }
+      ]
+    },
+    {
+      "key": "./app/welcome/logo-light.svg",
+      "label": "./app/welcome/logo-light.svg",
+      "biggerIsBetter": false,
+      "changed": false,
+      "runs": [
+        {
+          "name": "./app/welcome/logo-light.svg",
+          "value": 45,
+          "chunkIds": ["73e8398"],
+          "originalValue": 45,
+          "displayValue": "45B"
+        }
+      ]
+    },
+    {
+      "key": "./app/welcome/welcome.tsx",
+      "label": "./app/welcome/welcome.tsx",
+      "biggerIsBetter": false,
+      "changed": false,
+      "runs": [
+        {
+          "name": "./app/welcome/welcome.tsx",
+          "value": 4939,
+          "chunkIds": ["73e8398"],
+          "originalValue": 4939,
+          "displayValue": "4.82KiB"
+        }
+      ]
+    },
+    {
+      "key": "./app/routes/home.tsx",
+      "label": "./app/routes/home.tsx",
+      "biggerIsBetter": false,
+      "changed": false,
+      "runs": [
+        {
+          "name": "./app/routes/home.tsx",
+          "value": 258,
+          "chunkIds": ["73e8398"],
+          "originalValue": 258,
+          "displayValue": "258B"
+        }
+      ]
+    },
+    {
+      "key": "./app/routes/home.tsx?__react-router-build-client-route",
+      "label": "./app/routes/home.tsx?__react-router-build-client-route",
+      "biggerIsBetter": false,
+      "changed": false,
+      "runs": [
+        {
+          "name": "./app/routes/home.tsx?__react-router-build-client-route",
+          "value": 0,
+          "chunkIds": ["73e8398"],
+          "originalValue": 0,
+          "displayValue": "0B"
+        }
+      ]
+    },
+    {
+      "key": "./commonjsHelpers.js",
+      "label": "./commonjsHelpers.js",
+      "biggerIsBetter": false,
+      "changed": false,
+      "runs": [
+        {
+          "name": "./commonjsHelpers.js",
+          "value": 140,
+          "chunkIds": ["bdf54aa"],
+          "originalValue": 140,
+          "displayValue": "140B"
+        }
+      ]
+    },
+    {
+      "key": "../../node_modules/.pnpm/react@19.2.0/node_modules/react/jsx-runtime.js?commonjs-module",
+      "label": "../../node_modules/.pnpm/react@19.2.0/node_modules/react/jsx-runtime.js?commonjs-module",
+      "biggerIsBetter": false,
+      "changed": false,
+      "runs": [
+        {
+          "name": "../../node_modules/.pnpm/react@19.2.0/node_modules/react/jsx-runtime.js?commonjs-module",
+          "value": 31,
+          "chunkIds": ["bdf54aa"],
+          "originalValue": 31,
+          "displayValue": "31B"
+        }
+      ]
+    },
+    {
+      "key": "../../node_modules/.pnpm/react@19.2.0/node_modules/react/cjs/react-jsx-runtime.production.js?commonjs-exports",
+      "label": "../../node_modules/.pnpm/react@19.2.0/node_modules/react/cjs/react-jsx-runtime.production.js?commonjs-exports",
+      "biggerIsBetter": false,
+      "changed": false,
+      "runs": [
+        {
+          "name": "../../node_modules/.pnpm/react@19.2.0/node_modules/react/cjs/react-jsx-runtime.production.js?commonjs-exports",
+          "value": 36,
+          "chunkIds": ["bdf54aa"],
+          "originalValue": 36,
+          "displayValue": "36B"
+        }
+      ]
+    },
+    {
+      "key": "../../node_modules/.pnpm/react@19.2.0/node_modules/react/cjs/react-jsx-runtime.production.js",
+      "label": "../../node_modules/.pnpm/react@19.2.0/node_modules/react/cjs/react-jsx-runtime.production.js",
+      "biggerIsBetter": false,
+      "changed": false,
+      "runs": [
+        {
+          "name": "../../node_modules/.pnpm/react@19.2.0/node_modules/react/cjs/react-jsx-runtime.production.js",
+          "value": 1294,
+          "chunkIds": ["bdf54aa"],
+          "originalValue": 1294,
+          "displayValue": "1.26KiB"
+        }
+      ]
+    },
+    {
+      "key": "../../node_modules/.pnpm/react@19.2.0/node_modules/react/jsx-runtime.js",
+      "label": "../../node_modules/.pnpm/react@19.2.0/node_modules/react/jsx-runtime.js",
+      "biggerIsBetter": false,
+      "changed": false,
+      "runs": [
+        {
+          "name": "../../node_modules/.pnpm/react@19.2.0/node_modules/react/jsx-runtime.js",
+          "value": 239,
+          "chunkIds": ["bdf54aa"],
+          "originalValue": 239,
+          "displayValue": "239B"
+        }
+      ]
+    },
+    {
+      "key": "../../node_modules/.pnpm/react@19.2.0/node_modules/react/jsx-runtime.js?commonjs-es-import",
+      "label": "../../node_modules/.pnpm/react@19.2.0/node_modules/react/jsx-runtime.js?commonjs-es-import",
+      "biggerIsBetter": false,
+      "changed": false,
+      "runs": [
+        {
+          "name": "../../node_modules/.pnpm/react@19.2.0/node_modules/react/jsx-runtime.js?commonjs-es-import",
+          "value": 44,
+          "chunkIds": ["bdf54aa"],
+          "originalValue": 44,
+          "displayValue": "44B"
+        }
+      ]
+    },
+    {
+      "key": "../../node_modules/.pnpm/react@19.2.0/node_modules/react/index.js?commonjs-module",
+      "label": "../../node_modules/.pnpm/react@19.2.0/node_modules/react/index.js?commonjs-module",
+      "biggerIsBetter": false,
+      "changed": false,
+      "runs": [
+        {
+          "name": "../../node_modules/.pnpm/react@19.2.0/node_modules/react/index.js?commonjs-module",
+          "value": 26,
+          "chunkIds": ["bdf54aa"],
+          "originalValue": 26,
+          "displayValue": "26B"
+        }
+      ]
+    },
+    {
+      "key": "../../node_modules/.pnpm/react@19.2.0/node_modules/react/cjs/react.production.js?commonjs-exports",
+      "label": "../../node_modules/.pnpm/react@19.2.0/node_modules/react/cjs/react.production.js?commonjs-exports",
+      "biggerIsBetter": false,
+      "changed": false,
+      "runs": [
+        {
+          "name": "../../node_modules/.pnpm/react@19.2.0/node_modules/react/cjs/react.production.js?commonjs-exports",
+          "value": 26,
+          "chunkIds": ["bdf54aa"],
+          "originalValue": 26,
+          "displayValue": "26B"
+        }
+      ]
+    },
+    {
+      "key": "../../node_modules/.pnpm/react@19.2.0/node_modules/react/cjs/react.production.js",
+      "label": "../../node_modules/.pnpm/react@19.2.0/node_modules/react/cjs/react.production.js",
+      "biggerIsBetter": false,
+      "changed": false,
+      "runs": [
+        {
+          "name": "../../node_modules/.pnpm/react@19.2.0/node_modules/react/cjs/react.production.js",
+          "value": 18321,
+          "chunkIds": ["bdf54aa"],
+          "originalValue": 18321,
+          "displayValue": "17.89KiB"
+        }
+      ]
+    },
+    {
+      "key": "../../node_modules/.pnpm/react@19.2.0/node_modules/react/index.js",
+      "label": "../../node_modules/.pnpm/react@19.2.0/node_modules/react/index.js",
+      "biggerIsBetter": false,
+      "changed": false,
+      "runs": [
+        {
+          "name": "../../node_modules/.pnpm/react@19.2.0/node_modules/react/index.js",
+          "value": 194,
+          "chunkIds": ["bdf54aa"],
+          "originalValue": 194,
+          "displayValue": "194B"
+        }
+      ]
+    },
+    {
+      "key": "../../node_modules/.pnpm/react@19.2.0/node_modules/react/index.js?commonjs-es-import",
+      "label": "../../node_modules/.pnpm/react@19.2.0/node_modules/react/index.js?commonjs-es-import",
+      "biggerIsBetter": false,
+      "changed": false,
+      "runs": [
+        {
+          "name": "../../node_modules/.pnpm/react@19.2.0/node_modules/react/index.js?commonjs-es-import",
+          "value": 101,
+          "chunkIds": ["bdf54aa"],
+          "originalValue": 101,
+          "displayValue": "101B"
+        }
+      ]
+    },
+    {
+      "key": "../../node_modules/.pnpm/react-router@7.9.6_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/react-router/dist/development/chunk-4WY6JWTD.mjs",
+      "label": "../../node_modules/.pnpm/react-router@7.9.6_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/react-router/dist/development/chunk-4WY6JWTD.mjs",
+      "biggerIsBetter": false,
+      "changed": false,
+      "runs": [
+        {
+          "name": "../../node_modules/.pnpm/react-router@7.9.6_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/react-router/dist/development/chunk-4WY6JWTD.mjs",
+          "value": 267196,
+          "chunkIds": ["bdf54aa"],
+          "originalValue": 267196,
+          "displayValue": "260.93KiB"
+        }
+      ]
+    }
+  ],
+  "packages": [
+    {
+      "key": "react:react-dom",
+      "label": "react:react-dom",
+      "biggerIsBetter": false,
+      "changed": false,
+      "runs": [
+        {
+          "name": "react-dom",
+          "path": "../../node_modules/.pnpm/react-dom@19.2.0_react@19.2.0/node_modules/react-dom",
+          "value": 561323,
+          "displayValue": "548.17KiB"
+        }
+      ]
+    },
+    {
+      "key": "scheduler",
+      "label": "scheduler",
+      "biggerIsBetter": false,
+      "changed": false,
+      "runs": [
+        {
+          "name": "scheduler",
+          "path": "../../node_modules/.pnpm/scheduler@0.27.0/node_modules/scheduler",
+          "value": 11420,
+          "displayValue": "11.15KiB"
+        }
+      ]
+    },
+    {
+      "key": "cookie",
+      "label": "cookie",
+      "biggerIsBetter": false,
+      "changed": false,
+      "runs": [
+        {
+          "name": "cookie",
+          "path": "../../node_modules/.pnpm/cookie@1.0.2/node_modules/cookie",
+          "value": 8671,
+          "displayValue": "8.47KiB"
+        }
+      ]
+    },
+    {
+      "key": "react-router",
+      "label": "react-router",
+      "biggerIsBetter": false,
+      "changed": false,
+      "runs": [
+        {
+          "name": "react-router",
+          "path": "../../node_modules/.pnpm/react-router@7.9.6_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/react-router",
+          "value": 278330,
+          "displayValue": "271.81KiB"
+        }
+      ]
+    },
+    {
+      "key": "react-dom:@react-router/dev",
+      "label": "react-dom:@react-router/dev",
+      "biggerIsBetter": false,
+      "changed": false,
+      "runs": [
+        {
+          "name": "@react-router/dev",
+          "path": "../../node_modules/.pnpm/@react-router+dev@7.9.6_@react-router+serve@7.9.6_react-router@7.9.6_react-dom@19.2.0_r_4edf341b885e1cd0953c68295d1900d6/node_modules/@react-router/dev",
+          "value": 228,
+          "displayValue": "228B"
+        }
+      ]
+    },
+    {
+      "key": "moment",
+      "label": "moment",
+      "biggerIsBetter": false,
+      "changed": false,
+      "runs": [
+        {
+          "name": "moment",
+          "path": "../../node_modules/.pnpm/moment@2.30.1/node_modules/moment",
+          "value": 156228,
+          "displayValue": "152.57KiB"
+        }
+      ]
+    },
+    {
+      "key": "react",
+      "label": "react",
+      "biggerIsBetter": false,
+      "changed": false,
+      "runs": [
+        {
+          "name": "react",
+          "path": "../../node_modules/.pnpm/react@19.2.0/node_modules/react",
+          "value": 20312,
+          "displayValue": "19.84KiB"
+        }
+      ]
+    }
+  ],
+  "createdAt": "2025-11-24T03:22:04.086Z",
+  "version": "4.21.6",
+  "runs": [
+    {
+      "webpack": {
+        "chunks": [
+          {
+            "id": "0f671b2",
+            "name": "entry.client"
+          },
+          {
+            "id": "f308ea3",
+            "name": "root"
+          },
+          {
+            "id": "73e8398",
+            "name": "home"
+          },
+          {
+            "id": "bdf54aa",
+            "name": "chunk-4WY6JWTD"
+          }
+        ],
+        "builtAt": "2025-11-24T03:22:04.077Z",
+        "hash": ""
+      },
+      "internalBuildNumber": 1
+    }
+  ],
+  "summary": {
+    "webpack": [
+      {
+        "value": 397820,
+        "displayValue": "388.5KiB",
+        "delta": 397820,
+        "deltaPercentage": 100,
+        "displayDelta": "+388.5KiB",
+        "displayDeltaPercentage": "+100%",
+        "deltaType": "HIGH_NEGATIVE",
+        "regression": true,
+        "label": "Bundle Size"
+      },
+      {
+        "value": 377861,
+        "displayValue": "369KiB",
+        "delta": 377861,
+        "deltaPercentage": 100,
+        "displayDelta": "+369KiB",
+        "displayDeltaPercentage": "+100%",
+        "deltaType": "HIGH_NEGATIVE",
+        "regression": true,
+        "label": "Initial JS"
+      },
+      {
+        "value": 0,
+        "displayValue": "0B",
+        "delta": 0,
+        "deltaPercentage": 0,
+        "displayDelta": "0B",
+        "displayDeltaPercentage": "0%",
+        "deltaType": "NO_CHANGE",
+        "label": "Initial CSS"
+      },
+      {
+        "value": 0,
+        "displayValue": "0%",
+        "delta": 0,
+        "deltaPercentage": 0,
+        "displayDelta": "0%",
+        "displayDeltaPercentage": "0%",
+        "deltaType": "NO_CHANGE",
+        "regression": null,
+        "label": "Cache Invalidation"
+      },
+      {
+        "value": 41,
+        "displayValue": "41",
+        "delta": 41,
+        "deltaPercentage": 100,
+        "displayDelta": "+41",
+        "displayDeltaPercentage": "+100%",
+        "deltaType": "CHANGE",
+        "regression": null,
+        "label": "Modules"
+      },
+      {
+        "value": 0,
+        "displayValue": "0",
+        "delta": 0,
+        "deltaPercentage": 0,
+        "displayDelta": "0",
+        "displayDeltaPercentage": "0%",
+        "deltaType": "NO_CHANGE",
+        "label": "Duplicate Modules"
+      },
+      {
+        "value": 0,
+        "displayValue": "0%",
+        "delta": 0,
+        "deltaPercentage": 0,
+        "displayDelta": "0%",
+        "displayDeltaPercentage": "0%",
+        "deltaType": "NO_CHANGE",
+        "regression": null,
+        "label": "Duplicate Code"
+      },
+      {
+        "value": 4,
+        "displayValue": "4",
+        "delta": 4,
+        "deltaPercentage": 100,
+        "displayDelta": "+4",
+        "displayDeltaPercentage": "+100%",
+        "deltaType": "CHANGE",
+        "regression": null,
+        "label": "Chunks"
+      },
+      {
+        "value": 7,
+        "displayValue": "7",
+        "delta": 7,
+        "deltaPercentage": 100,
+        "displayDelta": "+7",
+        "displayDeltaPercentage": "+100%",
+        "deltaType": "CHANGE",
+        "regression": null,
+        "label": "Assets"
+      },
+      {
+        "value": 7,
+        "displayValue": "7",
+        "delta": 7,
+        "deltaPercentage": 100,
+        "displayDelta": "+7",
+        "displayDeltaPercentage": "+100%",
+        "deltaType": "HIGH_NEGATIVE",
+        "regression": true,
+        "label": "Packages"
+      },
+      {
+        "value": 0,
+        "displayValue": "0",
+        "delta": 0,
+        "deltaPercentage": 0,
+        "displayDelta": "0",
+        "displayDeltaPercentage": "0%",
+        "deltaType": "NO_CHANGE",
+        "label": "Duplicate Packages"
+      }
+    ]
+  },
+  "insights": {
+    "webpack": {
+      "assetsSizeTotal": {
+        "type": "info",
+        "data": {
+          "text": "Bundle Size — 388.5KiB (+100%).",
+          "md": "*Bundle Size* — *388.5KiB* (*+100%*).",
+          "info": {
+            "value": 397820,
+            "displayValue": "388.5KiB",
+            "delta": 397820,
+            "deltaPercentage": 100,
+            "displayDelta": "+388.5KiB",
+            "displayDeltaPercentage": "+100%",
+            "deltaType": "HIGH_NEGATIVE",
+            "regression": true
+          }
+        }
+      }
+    }
+  }
+}

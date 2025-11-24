@@ -1,4 +1,4 @@
-import type { Issue } from '../types.js'
+import type { Issue, Module } from '../types.js'
 import { formatBytes, generateIssueId, type Rule } from './engine.js'
 
 const RULE_ID = 'large-vendor-chunks'
@@ -16,11 +16,13 @@ export const createLargeVendorChunksRule =
     const MAX_SIZE = config?.maxChunkSize ?? 250 * 1024 // 250KB
     const issues: Issue[] = []
 
-    for (const chunk of analysis.chunks) {
+    for (const chunk of analysis.chunks.values()) {
       if (chunk.size <= MAX_SIZE) continue
 
       // Check if chunk contains mostly vendor code
-      const chunkModules = analysis.modules.filter(m => m.chunks.includes(chunk.id))
+      const chunkModules = chunk.modules
+        .map(id => analysis.modules.get(id))
+        .filter(Boolean) as Module[]
       const vendorModules = chunkModules.filter(m => m.isVendor)
 
       const vendorRatio = vendorModules.length / chunkModules.length

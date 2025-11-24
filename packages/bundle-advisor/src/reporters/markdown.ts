@@ -1,11 +1,13 @@
 import { formatBytes } from '../rules/engine.js'
-import type { AIEnhancedReport, RawReport } from '../types.js'
+import type { AIEnhancedBundleAnalysis, BundleAnalysis } from '../types.js'
 
 /**
  * Generate a Markdown report
  */
-export function generateMarkdownReport(report: RawReport | AIEnhancedReport): string {
-  const { analysis, issues } = report
+export function generateMarkdownReport(
+  analysis: BundleAnalysis | AIEnhancedBundleAnalysis,
+): string {
+  const { assets, chunks, packages, modules, stats, issues } = analysis
 
   const lines: string[] = []
 
@@ -16,11 +18,13 @@ export function generateMarkdownReport(report: RawReport | AIEnhancedReport): st
   // Overview
   lines.push('## Overview')
   lines.push('')
-  lines.push(`- **Total Size**: ${formatBytes(analysis.totalSize)}`)
-  lines.push(`- **Initial Load Size**: ${formatBytes(analysis.initialSize)}`)
-  lines.push(`- **Lazy Load Size**: ${formatBytes(analysis.totalSize - analysis.initialSize)}`)
-  lines.push(`- **Total Modules**: ${analysis.modules.length}`)
-  lines.push(`- **Total Chunks**: ${analysis.chunks.length}`)
+  lines.push(`- **Total Size**: ${formatBytes(stats.totalAssetsSize)}`)
+  lines.push(`- **Initial Size**: ${formatBytes(stats.initialChunksSize)}`)
+  // lines.push(`- **Lazy Load Size**: ${formatBytes(stats.totalSize - stats.initialSize)}`)
+  lines.push(`- **Assets**: ${assets.size}`)
+  lines.push(`- **Chunks**: ${chunks.size}`)
+  lines.push(`- **Packages**: ${packages.size}`)
+  lines.push(`- **Modules**: ${modules.size}`)
   lines.push('')
 
   // Potential savings
@@ -34,7 +38,7 @@ export function generateMarkdownReport(report: RawReport | AIEnhancedReport): st
   }
 
   // AI Summary (if available)
-  const aiReport = report as AIEnhancedReport
+  const aiReport = analysis as AIEnhancedBundleAnalysis
   if (aiReport.aiSummary) {
     lines.push('## AI Summary')
     lines.push('')
