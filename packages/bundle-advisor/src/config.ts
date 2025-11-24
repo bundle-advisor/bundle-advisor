@@ -6,8 +6,12 @@ import { resolve } from 'node:path'
  */
 export type BundleAdvisorConfig = {
   statsFile?: string
-  outputDir?: string | null
-  reporter?: 'json' | 'markdown'
+  outputDir?: string
+  reporters?: {
+    html?: boolean
+    json?: boolean
+    markdown?: boolean
+  }
   rules?: {
     maxChunkSize?: number
     maxModuleSize?: number
@@ -20,7 +24,7 @@ export type BundleAdvisorConfig = {
  */
 export const DEFAULT_CONFIG: Required<BundleAdvisorConfig> = {
   statsFile: resolve(process.cwd(), 'stats.json'),
-  reporter: 'markdown',
+  reporters: { markdown: true },
   outputDir: resolve(process.cwd(), 'bundle-advisor'),
   rules: {
     maxChunkSize: 250 * 1024, // 250KB
@@ -64,7 +68,7 @@ export function mergeConfig(
 ): Required<BundleAdvisorConfig> {
   return {
     statsFile: cliConfig.statsFile ?? fileConfig.statsFile ?? DEFAULT_CONFIG.statsFile,
-    reporter: cliConfig.reporter ?? fileConfig.reporter ?? DEFAULT_CONFIG.reporter,
+    reporters: cliConfig.reporters ?? fileConfig.reporters ?? DEFAULT_CONFIG.reporters,
     outputDir: cliConfig.outputDir ?? fileConfig.outputDir ?? DEFAULT_CONFIG.outputDir,
     rules: {
       maxChunkSize:

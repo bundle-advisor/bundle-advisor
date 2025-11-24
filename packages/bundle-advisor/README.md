@@ -34,7 +34,13 @@ bundle-advisor analyze --stats-file path/to/stats.json
 bundle-advisor analyze --stats-file path/to/stats.json
 
 # JSON
-bundle-advisor analyze --stats-file path/to/stats.json --reporter json
+bundle-advisor analyze --stats-file path/to/stats.json --reporters json
+
+# HTML
+bundle-advisor analyze --stats-file path/to/stats.json --reporters html
+
+# Multiple
+bundle-advisor analyze --stats-file path/to/stats.json --reporters json,html,markdown
 ```
 
 **Write to a directory**
@@ -52,7 +58,7 @@ You can configure via the CLI arguments or create a `bundle-advisor.config.json`
 
 ```json
 {
-  "reporter": "json",
+  "reporters": { "json": true },
   "statsFile": "path/to/stats.json",
   "outputDir": "path/to/file.md",
   "rules": {
@@ -67,9 +73,11 @@ You can configure via the CLI arguments or create a `bundle-advisor.config.json`
 
 | Option | Type | Default | Description |
 |--------|------|---------|-------------|
-| `reporter` | `"json" \| "markdown"` | `"markdown"`| The report output format |
+| `statsFile` | `string` | `stats.json`| The path to the input bundle stats file to analyze. |
 | `outputDir` | `string \| undefined` | `"bundle-advisor"`| The directory to write report files. Writes to console when explicitly set to `undefined`. |
-| `statsFile` | `string` | `stats.json`| The path to the bundle stats file. |
+| `reporters.html` | `boolean` | `false`| Determines if an HTML report is generated in `<outputDir>/report.html` |
+| `reporters.json` | `boolean` | `false`| Determines if a JSON report is generated in `<outputDir>/report.json` |
+| `reporters.markdown` | `boolean` | `true`| Determines if a markdown report is generated in `<outputDir>/report.md` |
 | `rules.maxChunkSize` | `number` | `250 * 1024` | Maximum chunk size in bytes |
 | `rules.maxModuleSize` | `number` | `200 * 1024` | Maximum module size in bytes |
 | `rules.maxModuleSize` | `number` | `100 * 1024` | Minimum size for lazy load candidates in bytes |
